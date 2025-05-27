@@ -13,7 +13,11 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
+        <div class="card mt-5">
+            <div class="card-header"><h4>Product Index</h4></div>
+            <div class="card-body"></div>
+        </div>
 
 
     </div>
