@@ -30,6 +30,10 @@
                             <label for="">Detail:</label>
                             <textarea type="text" name="detail" placeholder="Detail" class="form-control"></textarea>
                         </div>
+
+                        <div class="mt-3">
+                            <button class="btn btn-success btn-sm">Submit</button>
+                        </div>
                         
                     </form>
                 </div>
