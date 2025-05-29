@@ -19,7 +19,7 @@
                 <h4>Product List</h4>
             </div>
             <div class="card-body">
-                <a href="" class="btn btn-success btn-sm mb-3">Create Product</a>
+                <a href="{{ route('products.create') }}" class="btn btn-success btn-sm mb-3">Create Product</a>
                 <div class="table-responsive">
                     <table class="table table-primary">
                         <thead>
@@ -31,16 +31,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="">
-                                <td scope="row">R1C1</td>
-                                <td>R1C2</td>
-                                <td>R1C3</td>
-                            </tr>
-                            <tr class="">
-                                <td scope="row">Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
-                            </tr>
+                            @foreach ($products as $product)
+                                <tr class="">
+                                    <td scope="row">{{$product->id}}</td>
+                                    <td>{{$product->name}}</td>
+                                    <td>{{$product->detail}}</td>
+                                    <td>{{$product->id}}</td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

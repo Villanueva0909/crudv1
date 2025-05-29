@@ -9,4 +9,5 @@ Route::get('/', function () {
 
 // Route::post('/register', [UserController::class, 'register']);
 
-Route::get('/products',[ProductController::class, 'index'])->name( name: 'products.index');
+Route::get('/products', [ProductController::class, 'index'])->name(name: 'products.index');
+Route::get('/products.create', [ProductController::class, 'create'])->name(name: 'products.create');

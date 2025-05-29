@@ -16,29 +16,22 @@
     <div class="container">
         <div class="card mt-5">
             <div class="card-header">
-                <h4>Product List</h4>
+                <h4>Create Product</h4>
             </div>
             <div class="card-body">
-                <a href="" class="btn btn-info btn-sm mb-3">Back</a>
+                <a href="{{ route('products.index') }}" class="btn btn-info btn-sm mb-3">Back</a>
                 <div class="table-responsive">
-                    <table class="table table-primary">
-                        <thead>
-                            <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Detail</th>
-                                <th scope="col">Section</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="">
-                                <td scope="row">R1C1</td>
-                                <td>R1C2</td>
-                                <td>R1C3</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
+                    <form action="">
+                        <div class="mt-2">
+                            <label for="">Name:</label>
+                            <input type="text" name="name" placeholder="Name" class="form-control">
+                        </div>
+                            <div class="mt-2">
+                            <label for="">Detail:</label>
+                            <textarea type="text" name="detail" placeholder="Detail" class="form-control"></textarea>
+                        </div>
+                        
+                    </form>
                 </div>
             </div>
         </div>
