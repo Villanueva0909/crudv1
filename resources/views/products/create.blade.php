@@ -19,7 +19,7 @@
                 <h4>Product List</h4>
             </div>
             <div class="card-body">
-                <a href="" class="btn btn-success btn-sm mb-3">Create Product</a>
+                <a href="" class="btn btn-info btn-sm mb-3">Back</a>
                 <div class="table-responsive">
                     <table class="table table-primary">
                         <thead>
@@ -36,11 +36,7 @@
                                 <td>R1C2</td>
                                 <td>R1C3</td>
                             </tr>
-                            <tr class="">
-                                <td scope="row">Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
-                            </tr>
+
                         </tbody>
                     </table>
                 </div>
