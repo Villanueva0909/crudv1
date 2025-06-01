@@ -21,20 +21,27 @@
             <div class="card-body">
                 <a href="{{ route('products.index') }}" class="btn btn-info btn-sm mb-3">Back</a>
                 <div class="table-responsive">
-                    <form action="">
+                    <form action="{{ route('products.store') }}" method="POST">
+                        @csrf
                         <div class="mt-2">
                             <label for="">Name:</label>
-                            <input type="text" name="name" placeholder="Name" class="form-control">
+                            <input type="text" name="name" placeholder="Please input Name" class="form-control">
+                            @error('name')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
-                            <div class="mt-2">
+                        <div class="mt-2">
                             <label for="">Detail:</label>
-                            <textarea type="text" name="detail" placeholder="Detail" class="form-control"></textarea>
+                            <textarea type="text" name="detail" placeholder="Please input details" class="form-control"></textarea>
+                            @error('detail')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
                         </div>
 
                         <div class="mt-3">
                             <button class="btn btn-success btn-sm">Submit</button>
                         </div>
-                        
+
                     </form>
                 </div>
             </div>

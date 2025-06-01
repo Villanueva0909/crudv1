@@ -17,4 +17,15 @@ class ProductController extends Controller
     {
         return view('products.create');
     }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            "name" => "required",
+            "detail" => "required"
+        ]);
+        dd($request->all());
+
+        return redirect() ->route("products.index");
+    }
 }
