@@ -33,7 +33,7 @@
                         <tbody>
                             @foreach ($products as $product)
                                 <tr class="">
-                                    <td scope="row">{{$product->id}}</td>
+                                    <td scope="row"><h1>test</h1></td>
                                     <td>{{$product->name}}</td>
                                     <td>{{$product->detail}}</td>
                                     <td>{{$product->id}}</td>

@@ -24,7 +24,11 @@ class ProductController extends Controller
             "name" => "required",
             "detail" => "required"
         ]);
-        dd($request->all());
+        
+        Product::create([
+            "name" => $request->name,
+            "detail" => $request->detail
+        ]);
 
         return redirect()->route("products.index");
     }
