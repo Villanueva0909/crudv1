@@ -29,5 +29,8 @@ class ProductController extends Controller
             "name" => $request->name,
             "detail" => $request->detail
         ]);
+
+        return redirect('product.index')
+            ->with('success', 'Product created succcessfully');
     }
 }
